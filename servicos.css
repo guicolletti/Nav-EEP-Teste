@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(scott.jpeg);
+    background-size: auto;
+    margin: 0;
+}
+
+.menu {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   background-color: rgb(83, 83, 83);
+}
+
+.menu > li {
+   display: inline-block;
+   position: relative;
+}
+
+.menu li a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+}  
+
+.menu li a:hover{
+    background-color: #555;
+}
+
+.submenu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(60, 60, 60);
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+}
+
+.submenu li{
+    margin: 0;
+}
+
+.submenu li a{
+    display: block;
+    padding: 15px;
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
+
+.menu li:hover .submenu li{
+    margin: 15px;
+}
